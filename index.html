@@ -155,10 +155,59 @@
 						<h2>Vagas abertas para consultoria 💰!</h2>
 						<p>Transforme sua vida financeira e conquiste uma relação saudável com o dinheiro.
 						<br>Cuidar das suas finanças, é cuidar de você!</p>
-						<ul class="actions special">
-							<li><a href="https://wa.me/5527992327393" class="icon whatsapp"><input type="button" value="Contato" /></a></li>
-							<li><input type="button" value="Ver Horários Disponíveis" onclick="listAvailableTimes()" /></li>
-						</ul>
+						<div class="box">
+							<form method="post" action="#">
+								<div class="fields">
+									<!-- Nome -->
+									<div class="field half">
+										<input type="text" name="name" placeholder="Nome">
+									</div>
+									<!-- Telefone -->
+									<div class="field half">
+										<input type="text" name="telefone" id="telefone" placeholder="Telefone" />
+									</div>
+									<!-- Email -->
+									<div class="field">
+										<input type="email" name="email" placeholder="Email">
+									</div>
+									<!-- Tipo de Consulta -->
+									<div class="field">
+										<select id="tipo" name="tipo-consulta">
+											<option value="bate-papo">Bate-papo Inicial</option>
+											<option value="reagenda">Reagendamento</option>
+										</select>
+									</div>
+									<!-- Tipo de Serviço -->
+									<div class="field">
+										<select id="pessoa" name="tipo-servico">
+											<option value="PF">Pessoa Física</option>
+											<option value="PJ">Pessoa Jurídica</option>
+										</select>
+									</div>
+									<!-- Data -->
+									<div class="field half">
+										<input type="date" id="data" name="data">
+									</div>
+									<!-- Horário -->
+									<div class="field half">
+										<select id="hora" name="horario">
+											<option value="09:30">09:30</option>
+											<option value="11:00">11:00</option>
+											<option value="13:30">13:30</option>
+											<option value="15:00">15:00</option>
+											<option value="17:30">17:30</option>
+											<option value="19:00">19:00</option>
+										</select>
+									</div>
+								</div>
+								<ul class="actions special">
+									<li>
+										<input type="submit" value="Agendar Horário" class="button" onclick="confirmSchedule()">
+									</li>
+									<li><a href="https://wa.me/5527992327393" class="icon whatsapp"><input type="button" value="Contato" /></a></li>
+								</ul>
+							</form>
+						</div>
 					</header>
 				</div>
 			</section>

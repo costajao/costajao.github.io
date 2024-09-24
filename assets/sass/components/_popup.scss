@@ -1,0 +1,62 @@
+/* Floating Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .popup.active {
+    display: block;
+  }
+  
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .popup-content h2 {
+    margin-bottom: 1em;
+  }
+  
+  .popup-content select,
+  .popup-content input[type="date"] {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  
+  .close-btn {
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    background-color: darken(#ff5a5f, 10%);
+  }
+  
+  input[type="button"].button {
+    background-color: _palette(accent1, bg);
+    border-radius: 3.5em;
+    color: _palette(accent1, fg);
+    padding: 0.75em 2em;
+    margin-top: 1em;
+    cursor: pointer;
+  }
+  
+  input[type="button"].button:hover {
+    background-color: lighten(_palette(accent1, bg), 5%);
+  }
+  
