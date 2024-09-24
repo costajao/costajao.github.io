@@ -7,6 +7,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -19,7 +20,7 @@
 						<li><a href="#intro">Intro</a></li>
 						<li><a href="#one">Consultoria</a></li>
 						<li><a href="#two">Quem sou</a></li>
-						<li><a href="#three">Mais</a></li>
+						<li><a href="#three">Eu</a></li>
 						<li><a href="#work">Clientes</a></li>
 						<li><a href="#contact">Contato</a></li>
 					</ul>
@@ -173,36 +174,28 @@
 									<!-- Tipo de Consulta -->
 									<div class="field">
 										<select id="tipo" name="tipo-consulta">
+											<option value="">Tipo de Atendimento</option>
 											<option value="bate-papo">Bate-papo Inicial</option>
 											<option value="reagenda">Reagendamento</option>
 										</select>
 									</div>
-									<!-- Tipo de Serviço -->
-									<div class="field">
-										<select id="pessoa" name="tipo-servico">
-											<option value="PF">Pessoa Física</option>
-											<option value="PJ">Pessoa Jurídica</option>
-										</select>
-									</div>
 									<!-- Data -->
-									<div class="field half">
-										<input type="date" id="data" name="data">
+									<div class="field half date-input">
+										<input type="text" id="date-input" name="data" class="flatpickr-input" placeholder="Selecione uma data">
 									</div>
 									<!-- Horário -->
 									<div class="field half">
-										<select id="hora" name="horario">
-											<option value="09:30">09:30</option>
-											<option value="11:00">11:00</option>
-											<option value="13:30">13:30</option>
-											<option value="15:00">15:00</option>
-											<option value="17:30">17:30</option>
-											<option value="19:00">19:00</option>
+										<select type="hora" id="hora" name="horario">
+											<option value="">Horário de preferência</option>
+											<option value="morning">Manhã</option>
+											<option value="late">Tarde</option>
+											<option value="evening">Noite</option>
 										</select>
 									</div>
 								</div>
 								<ul class="actions special">
 									<li>
-										<input type="submit" value="Agendar Horário" class="button" onclick="confirmSchedule()">
+										<input type="submit" value="Solicitar Atendimento" class="button" onclick="confirmSchedule()">
 									</li>
 									<li><a href="https://wa.me/5527992327393" class="icon whatsapp"><input type="button" value="Contato" /></a></li>
 								</ul>
@@ -233,6 +226,7 @@
 
 		<!-- Scripts -->
 			<script async defer src="https://apis.google.com/js/api.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

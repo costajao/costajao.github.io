@@ -72,3 +72,22 @@
 			}
 		}
 	}
+	
+	.date-input .flatpickr-input {
+		font-size: 16px;
+		padding: 8px 12px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		width: 100%;
+	  }
+	  
+	.date-input .flatpickr-calendar {
+		font-size: 16px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+
+	#hora option:first-child {
+		color: #999;
+		font-style: italic;
+	  }

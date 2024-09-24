@@ -594,3 +594,12 @@ phoneField.addEventListener('input', function (e) {
 	let x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,5})(\d{0,4})/);
 	e.target.value = '(' + x[1] + ') ' + x[2] + '-' + x[3];
 });
+
+document.getElementById('date-input').addEventListener('change', function() {
+    const dateDisplay = document.querySelector('.date-display');
+    dateDisplay.textContent = this.value; // Atualiza a exibição com a data selecionada
+});
+
+flatpickr("#date-input", {
+	dateFormat: "d/m/Y"
+  });
