@@ -8,6 +8,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+		<!-- Calendly link widget begin -->
+		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+		<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+		<!-- Calendly link widget end -->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -157,49 +161,14 @@
 						<p>Transforme sua vida financeira e conquiste uma relação saudável com o dinheiro.
 						<br>Cuidar das suas finanças, é cuidar de você!</p>
 						<div class="box">
-							<form method="post" action="#">
-								<div class="fields">
-									<!-- Nome -->
-									<div class="field half">
-										<input type="text" name="name" placeholder="Nome">
-									</div>
-									<!-- Telefone -->
-									<div class="field half">
-										<input type="text" name="telefone" id="telefone" placeholder="Telefone" />
-									</div>
-									<!-- Email -->
-									<div class="field">
-										<input type="email" name="email" placeholder="Email">
-									</div>
-									<!-- Tipo de Consulta -->
-									<div class="field">
-										<select id="tipo" name="tipo-consulta">
-											<option value="">Tipo de Atendimento</option>
-											<option value="bate-papo">Bate-papo Inicial</option>
-											<option value="reagenda">Reagendamento</option>
-										</select>
-									</div>
-									<!-- Data -->
-									<div class="field half date-input">
-										<input type="text" id="date-input" name="data" class="flatpickr-input" placeholder="Selecione uma data">
-									</div>
-									<!-- Horário -->
-									<div class="field half">
-										<select type="hora" id="hora" name="horario">
-											<option value="">Horário de preferência</option>
-											<option value="morning">Manhã</option>
-											<option value="late">Tarde</option>
-											<option value="evening">Noite</option>
-										</select>
-									</div>
-								</div>
-								<ul class="actions special">
-									<li>
-										<input type="submit" value="Solicitar Atendimento" class="button" onclick="confirmSchedule()">
-									</li>
-									<li><a href="https://wa.me/5527992327393" class="icon whatsapp"><input type="button" value="Contato" /></a></li>
-								</ul>
-							</form>
+							<ul class="actions special">
+								<li>
+									<a href="#" onclick="Calendly.initPopupWidget({url: 'https:/calendly.com/costajoaovictor0'}); return false;"><input type="button" value="Solicitar Atendimento" /></a>
+								</li>
+								<li>	
+									<a href="https://wa.me/5527992327393" class="icon whatsapp"><input type="button" value="Contato" /></a>
+								</li>
+							</ul>
 						</div>
 					</header>
 				</div>
