@@ -1,8 +1,5 @@
-;(function () {
-	
+;(function () {	
 	'use strict';
-
-
 
 	// iPad and iPod detection	
 	var isiPad = function(){
@@ -160,9 +157,6 @@
 		});	
 	};
 
-	
-
-
 	// Document on load.
 	$(function(){
 		fullHeight();
@@ -170,7 +164,31 @@
 		counterWayPoint();
 		contentWayPoint();
 		owlCarouselFeatureSlide();
-	});
 
+		// EmailJS form
+		(function initEmailForm() {
+			if (typeof emailjs !== 'undefined') {
+				emailjs.init("dlY8ZFVmeC6kyqwcp"); 
+	
+				const form = document.getElementById('contact-form');
+				if (form) {
+					form.addEventListener('submit', function(event) {
+						event.preventDefault();
+	
+						emailjs.sendForm('service_bianca', 'template_bianca', this)
+							.then(function(response) {
+								alert('Mensagem enviada com sucesso!');
+								form.reset();
+							}, function(error) {
+								alert('Falha ao enviar. Tente novamente.');
+								console.error('Erro:', error);
+							});
+					});
+				}
+			} else {
+				console.warn('EmailJS não está disponível. Verifique se foi incluído corretamente.');
+			}
+		})();
+	});
 
 }());

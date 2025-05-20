@@ -108,34 +108,36 @@
 								</ul>
 							</div>
 							<div class="col-md-7 col-md-push-1 animate-box">
-								<div class="row">
-									<div class="col-md-12">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Assunto">
+								<form id="contact-form">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<input type="text" class="form-control" name="title" placeholder="Assunto" required>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-group">
+												<textarea class="form-control" name="message" cols="30" rows="7" placeholder="Conte um pouco sua história. Te respondo em breve" required></textarea>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" class="form-control" name="name" placeholder="Nome" required>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="email" class="form-control" name="email" placeholder="Email" required>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-group">
+												<input type="submit" value="Enviar" class="btn btn-primary">
+											</div>
 										</div>
 									</div>
-									<div class="col-md-12">
-										<div class="form-group">
-											<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Conte um pouco sua história. Te respondo em breve"></textarea>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Nome">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Email">
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="form-group">
-											<input type="submit" value="Enviar" class="btn btn-primary">
-										</div>
-									</div>
-								</div>
-							</div>
+								</form>
+							</div>							
 						</div>
 					</div>
 				</div>
@@ -166,6 +168,10 @@
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
+
+	<!-- EmailJS -->
+	<script src="config.js"></script>
+	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 	</body>
 </html>
