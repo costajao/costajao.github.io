@@ -1,17 +1,7 @@
-/* ===================================================================
- * -------------------------------------------------------------------
- *
- * TOC:
- * 
- * # PrismJS 1.20.0
- * # Swiper 6.4.5
- * # Basiclightbox
- * 
- * ------------------------------------------------------------------- */
-
 code[class*="language-"],
 pre[class*="language-"] {
     color           : #ccc;
+    text-align      : left;
     background      : none;
     font-family     : var(--font-mono);
     font-size       : calc(var(--text-size) * 0.9444);
@@ -125,19 +115,6 @@ pre[class*="language-"] {
     color : green;
 }
 
-
-
-/* ===================================================================
- * # Swiper 6.4.5
- *   Most modern mobile touch slider and framework with hardware accelerated transitions
- *   https://swiperjs.com
- *
- *   Copyright 2014-2020 Vladimir Kharlampidi
- *
- *   Released under the MIT License
- *
- *   Released on: December 18, 2020
- * ------------------------------------------------------------------- */
 
 @font-face {
     font-family : "swiper-icons";
@@ -768,13 +745,6 @@ button.swiper-pagination-bullet {
     backface-visibility         : hidden;
 }
 
-
-
-/* ===================================================================
- * # Basiclightbox
- *
- *
- * ------------------------------------------------------------------- */
 
 .basicLightbox {
     position        : fixed;
