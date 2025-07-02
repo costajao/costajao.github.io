@@ -4232,3 +4232,14 @@ img.u-pull-left {
         right : 6vw;
     }
 }
+
+.lang-toggle img {
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    transition: transform 0.2s ease;
+  }
+  
+  .lang-toggle img:hover {
+    transform: scale(1.1);
+  }
+  

@@ -58,16 +58,17 @@
         <header class="s-header">
 
             <div class="header-mobile">
-                <span class="mobile-home-link"><a href="#top">João.</a></span>
-                <a class="mobile-menu-toggle" href="#"><span>Menu</span></a>
+                <span class="mobile-home-link"><a href="">João.</a></span>
+                <a class="mobile-menu-toggle" href=""><span>Menu</span></a>
             </div>
 
             <div class="row wide main-nav-wrap">
                 <nav class="column lg-12 main-nav">
                     <ul>
-                        <li><a href="#top" class="home-link">João.</a></li>
+                        <li><a href="#top" class="smoothscroll">João.</a></li>
                         <li><a href="#intro" class="smoothscroll">Intro</a></li>
                         <li><a href="#about" class="smoothscroll">About</a></li>
+                        <li><a href="#career" class="smoothscroll">Career</a></li>
                         <li><a href="#works" class="smoothscroll">Works</a></li>
                         <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
                     </ul>
@@ -89,15 +90,17 @@
                 <div class="row intro-content wide">
 
                     <div class="column">
-                        <div class="text-pretitle with-line">
+                        <div id="hero-greeting" class="text-pretitle with-line">
                             Hello World
                         </div>
 
                         <h1 class="text-huge-title">
-                            I am <span class="highlight">João, </span><br>
-                            Python Developer <br>
-                            & Data Engineer.
-                            <h3 class="text-pretitle">Building packages, pipelines, and insights that drive decisions.</h3>
+                            <span id="hero-name"></span><br>
+                            <span id="hero-role-one"></span><br>
+                            <span id="hero-role-two"></span>
+                            <h3 id="hero-subtitle" class="text-pretitle">
+                                Building packages, pipelines, and insights that drive decisions.
+                            </h3>
                         </h1>
                     </div>
 
@@ -105,12 +108,20 @@
                         <li><a href="https://github.com/costajao" target="_blank">Github</a></li>
                         <li><a href="https://www.linkedin.com/in/costajao/" target="_blank">LinkedIn</a></li>
                         <li><a href="https://www.instagram.com/costajao/" target="_blank">Instagram</a></li>
+                        <li><a href="" class="lang-btn">
+                            <img id="lang-toggle"
+                                 src="https://hatscripts.github.io/circle-flags/flags/us.svg"
+                                 alt="Switch Language"
+                                 width="24" />
+                          </a>ㅤ</li>
                     </ul>
 
                 </div> <!-- end intro content -->
 
                 <a href="#about" class="intro-scrolldown smoothscroll">
-                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                        <path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/>
+                    </svg>
                 </a>
 
             </section> <!-- end s-intro -->
@@ -134,28 +145,21 @@
                                 About
                             </h2>
                             <p class="attention-getter" data-animate-el>
-                                A <strong>Python Developer</strong> with solid experience in <strong>Data 
-                                Engineering</strong> and Business Intelligence, transforming data into 
-                                strategic insights using tools like <strong>Spark, SQL, and Azure DevOps</strong>. 
-                                I'm currently focused on building <strong>Python packages, internal libraries, 
-                                and automation tools</strong> that optimize workflows and enhance productivity 
-                                across data teams.
+                                <span id="about-one"></span>
                             </p>
                             <p class="attention-getter" data-animate-el> 
-                                I’m passionate about building and contributing to solutions that 
-                                <strong>enhance productivity, connect people, and enable sustainable growth</strong>. 
-                                I’m constantly seeking opportunities to apply my skills in impactful 
-                                projects and contribute to innovative, purpose-driven teams.
+                                <span id="about-two"></span>
                             </p>
-                            <a href="https://www.linkedin.com/in/costajao/" class="btn btn--medium u-fullwidth" data-animate-el>LinkedIn</a>
-
+                            <a href="asset/resume_joao_victor.pdf" target="_blank" class="btn btn--medium u-fullwidth" data-animate-el>
+                                <i class="fas fa-file-pdf"></i> resume
+                            </a>
                         </div>
                     </div>
                 </div> <!-- about-info -->
 
+                <div class="row contact-top" data-animate-block>
 
-                <div class="row about-expertise" data-animate-block>
-                    <div class="column lg-12">
+                    <div class="column lg-12 md-12">
 
                         <h2 class="text-pretitle" data-animate-el>Skills</h2>
 
@@ -187,8 +191,14 @@
                         </ul>
 
                     </div>
-                </div> <!-- end about-expertise -->
+                    
+                </div> <!-- end skill-bars -->
 
+            </section> <!-- end s-about -->
+
+            <!-- ### career
+            ================================================== -->
+            <section id="career" class="s-career target-section">
 
                 <div class="row about-timelines" data-animate-block>
 
@@ -293,7 +303,7 @@
 
                 </div> <!-- end about-timelines -->
 
-            </section> <!-- end s-about -->
+            </section> <!-- end s-career -->
 
             <!-- ### works
             ================================================== -->
@@ -314,18 +324,7 @@
                                             <span>Python Developer</span>
                                         </cite>
                                     </div>
-                                    <p>
-                                        I led the development of a closed-source <strong>Python</strong> library designed to 
-                                        streamline and accelerate the entire the data analysis lifecycle—from exploratory 
-                                        analysis and preprocessing to integration with corporate systems, process automation, 
-                                        advanced analytics, and machine learning modeling. 
-                                        Built to be accessible for non-technical business users, the library enabled intuitive, 
-                                        structured insight generation and helped democratize data across the organization. 
-                                        To ensure quality, scalability, and maintainability, I implemented a robust <strong>CI/CD</strong> 
-                                        pipeline using <strong>Docker</strong> for isolated environments, <strong>SonarQube</strong> 
-                                        for static code analysis, automated testing, and structured version control, 
-                                        establishing a secure and reproducible development process.
-                                    </p>
+                                    <p><span id="work-vale"></span></p>
                                 </div> <!-- end testimonial-slider__slide -->
                 
                                 <div class="testimonial-slider__slide swiper-slide">
@@ -336,17 +335,7 @@
                                             <span>Data Engineer</span>
                                         </cite>
                                     </div>
-                                    <p>
-                                        I contributed to strategic data initiatives using <strong>Python, Apache Spark</strong>, 
-                                        and <strong>DB2</strong>, applying <strong>descriptive and predictive modeling</strong> 
-                                        to identify customer and product churn risks—resulting in an <strong>81%</strong> reduction 
-                                        in churn. I also supported ESG analysis projects, delivering insights aligned with sustainable 
-                                        investment guidelines, and led the development of executive dashboards for C-level monitoring. 
-                                        Additionally, I built Airflow-orchestrated pipelines to monitor BI tools like <strong>Power BI, 
-                                        Spotfire, Cognos, OBIEE</strong>, and <strong>SAS</strong>, ensuring system reliability. 
-                                        My work also included designing analytics solutions to assess employee proficiency, 
-                                        integrating structured data and dashboards to support HR strategies and organizational growth.
-                                    </p>
+                                    <p><span id="work-bb"></span></p>
                                 </div> <!-- end testimonial-slider__slide -->
                 
                                 <div class="testimonial-slider__slide swiper-slide">
@@ -357,18 +346,7 @@
                                             <span>Data Analyst</span>
                                         </cite>
                                     </div>
-                                    <p>
-                                        I worked on the development of <strong>decision support systems</strong> for monitoring 
-                                        corporate tax compliance and vehicle tax control. I contributed to improving platforms 
-                                        for tracking payment declarations and controlling agricultural producers’ tax data. 
-                                        My responsibilities included <strong>PL/SQL development, data integration</strong> 
-                                        using <strong>SAS (DI, Flow, Viya, Guide)</strong>, <strong>SQL</strong> and 
-                                        <strong>Python</strong>, as well as data modeling with PowerDesigner and version control 
-                                        with <strong>Git</strong>. I orchestrated ETL pipelines, built dashboards and reports, 
-                                        and supported data ingestion into <strong>Data Warehouses, Data Marts</strong>, and 
-                                        operational databases. Additionally, I facilitated communication between Product Owners 
-                                        and development teams, ensuring agile delivery through Scrum/Kanban practices.
-                                    </p>
+                                    <p><span id="work-sefaz"></span></p>
                                 </div> <!-- end testimonial-slider__slide -->
         
                                 <div class="testimonial-slider__slide swiper-slide">
@@ -379,14 +357,7 @@
                                             <span>PL/SQL & Java Systems Developer</span>
                                         </cite>
                                     </div>
-                                    <p>
-                                        I supported the <strong>migration of the ERP system and database to Oracle 12c</strong>, 
-                                        adapting and developing <strong>PL/SQL routines</strong> and building <strong>modular 
-                                        interfaces using Java</strong>. I worked on data modeling, transformation, and ETL processes, 
-                                        and created <strong>reports and dashboards</strong> for commercial managers and internal auditors. 
-                                        Additionally, I developed <strong>scoring models</strong> to optimize business areas and 
-                                        provided <strong>user support and issue resolution</strong> to ensure system reliability.
-                                    </p>
+                                    <p><span id="work-cda"></span></p>
                                 </div> <!-- end testimonial-slider__slide -->
             
                             </div> <!-- end swiper-wrapper -->
@@ -406,13 +377,12 @@
             <section id="contact" class="s-contact target-section">
 
                 <div class="row contact-top">
-                    <div class="column lg-12">
+                    <div class="column lg-12 tab-12">
                         <h2 class="text-pretitle">
-                            Get In Touch
+                            <span id="contact-title"></span>
                         </h2>
-
                         <p class="h1">
-                            Let’s connect and explore how I can bring value to your next data challenge.
+                            <span id="contact-text"></span>
                         </p>
                     </div>
                 </div> <!-- end contact-top -->
@@ -474,6 +444,7 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/lang.js"></script>
 
 </body>
 </html>
