@@ -4239,7 +4239,7 @@ img.u-pull-left {
     transition: transform 0.2s ease;
   }
   
-  .lang-toggle img:hover {
+.lang-toggle img:hover {
     transform: scale(1.1);
   }
   
